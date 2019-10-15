@@ -19,3 +19,11 @@ Route::get('/lessons', 'LessonsController@index');
 Route::get('/lessons/{viewName}', 'LessonsController@show');
 
 Route::post('/uploads', 'UploadsController@store');
+
+Route::get('uploads-js', function(){
+    return view('lessons.1-intro.uploads-js');
+});
+
+Route::get('uploads-vue', function(){
+    return view('lessons.1-intro.uploads-vue');
+});
